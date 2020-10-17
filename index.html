@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Modélisation Math</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color:dimgray;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Gas Simulator</h2>
+
+    <div class="mur">
+        <h3>Appuyer sur la touche RIGHT de votre clavier pour réduire l'espace du Gaz !</h3>
+    </div>
+
+    <div class="rangeslider">
+        <p>&nbsp;Nombre de balles: <span id="demo"></span></p><input type="range" min="1" max="100" value="50" class="myslider" id="sliderRange">
+
+    </div>
+
+    <div class="rangeslider">
+        <p>&nbsp;Vitesse des balles <span id="test"></span></p><input type="range" min="1" max="100" value="50" class="myslider" id="slid">
+
+    </div>
+
+    <div class="rangeslider">
+        <p>&nbsp;Repartition du Gaz </p><input type="range" min="1" max="100" value="50" class="myslider" id="slidgaz">
+
+    </div>
+
+    <div class="mol">
+        <span id="hyd">Hydrogène </span><span id="dio">Dioxygène</span>
+    </div>
+
+    <div class="pression">
+        <p>&nbsp;Pression: <span id="pression"></span>&nbsp;(<span id="val"></span>) </p>
+    </div>
+    <div class="pression">
+        <p>&nbsp;Température: <span id="temperature"></span> </p>
+    </div>
+
+    <canvas id="canvas" width="1000" height="500"></canvas>
+    <script src="canvas.js"></script>
+
+    <div class="droit">
+        <button id="test" onClick="montest()">Mode dispersion</button>
+    </div>
+
+</body>
+</html>
